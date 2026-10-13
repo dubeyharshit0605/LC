@@ -10,7 +10,7 @@ public:
         while(!mt.empty()){
             auto it=mt.begin();
             int x=*it;
-            mt.erase(it);
+            mt.erase(mt.find(x));
             if(mt.find(k-x)!=mt.end()){
                 cnt++;
               mt.erase(mt.find(k-x));
